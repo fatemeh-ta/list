@@ -1,9 +1,14 @@
-.class1{
+*{
+   box-sizing: border-box;
+}
+
+.font-star{
     color:red;
 }
 
 textarea{
-    width:500px;
+    width:100%;
+    padding:5px;
     height:200px;
     resize: both;
     overflow: auto;
@@ -14,49 +19,172 @@ body{
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-
-.class2{
-   margin-left:240px;
-}
-
 lable{
    font-weight: bold;
 }
 
-input{
-   padding: 5px;
+.font-lable{
+   font-size:large;
 }
 
-.class3{
-   font-size:x-large;
-}
-
-.class4{
-   width:30%;
+.background{
+   width:100%;
    height:auto;
-   border: 1px solid transparent;
    padding:20px 20px;
    background-color: rgba(218, 213, 213, 0.973);
-}
-
-input[name="lastname"]{
-   margin-left: 20px;
-
-
+  
 }
 
 input[type="reset"]{
    margin-left: 20px;
+   font-weight: bold;
+   background-color: rgba(218, 213, 213, 0.973) ;
+   color:black;
+   border:1px solid rgba(189, 184, 184, 0.973);
+   padding:10px;
+   font-family: cursive;
+}
+
+input[type="submit"]{
+   font-weight: bold;
+   background-color: rgba(218, 213, 213, 0.973) ;
+   color:black;
+   border:1px solid rgba(189, 184, 184, 0.973);
+   padding:10px;
+   font-family: cursive;
+}
+
+
+input[type="email"]{
+   width:100%;
+
+}
+
+.box-name{
+   width:50%;
+   float:left;
+}
+
+.box-last{
+   width:50%;
+   float:left;
+   padding-left:5px;
+}
+
+input[id="fnam"]{
+   width:100%;
+ }
+
+input[id="lnam"]{
+   width:100%;
+}
+
+.clear{
+   clear:both;
+   display:table;
+   content:"";
+}
+
+.box-email{
+   width:100%;
+   
+}
+
+.message{
+   width:100%;
+  }
+
+input{
+   border-radius: 0%;
+   padding:5px;
+   border:1px solid rgba(189, 184, 184, 0.973);
+}
+
+@media only screen and (min-width:590px){
+
+   .background{
+      width:75%;}
+
+   .box-name{
+      width:50%;
+      float:left;
+   }
+   
+   .box-last{
+      width:50%;
+      float:left;
+      padding-left:10px
+   }
+
+@media only screen and (min-width:790px){
+
+      .background{
+         width:50%;}   
+   
+   
+}
+
+@media only screen and (min-width:1170px){
+
+   .background{
+      width:30%;}   
 
 
 }
 
-img{
-   position: absolute;
-   left:250px;
-   opacity:0.4;
-      top:139px;
+@media only screen and (min-width:1900px){
+
+   .background{
+      width:20%;}   
+
+
 }
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -11,29 +11,42 @@
 
     <body>
 
-        <div class="class4">
+        <div class="background">
 
         <h1>
-            Contact-us
+            Contact us
         </h1>
 
-        <form action="/action_page.php">
-          <lable class="class3">Name <span class="class1">* </span></lable>  <br>
-            <input type="text" id="fnam" name="firstname" required>
-            <img src="239301-download_arrow-512.webp.png" width="1.5%">
-            <input type="text" id="lnam" name="lastname" required><br>
-            <lable for="fnam">First</lable>
-            
-            <lable for="lnam" class="class2">Last</lable><br><br>
-            
-            <lable for="mail" class="class3">Email<span class="class1" >*</span> </lable><br>
-            <input id=""mail type="email" name="email" required><br><br>
+        <form action="">
+            <lable class="font-lable">Name <span class="font-star">* </span></lable> 
 
-            <lable for="msg" class="class3"> Message</lable><br>
+        <div class="clear">
+            <div class="box-name">
+                 <input type="text" id="fnam" name="firstname" required>
+                 <lable for="fnam">First</lable> 
+            </div>
+
+            <div class="box-last">
+                <input type="text" id="lnam" name="lastname" required><br>
+                <lable for="lnam">Last</lable>
+            </div>
+
+        </div> 
+        <br>
+        <div class="box-email">
+            <lable for="mail" class="font-lable">Email <span class="font-star"> *</span> </lable><br>
+            <input id="mail" type="email" name="email" required><br><br>
+        </div>
+            
+        <div class="message">
+            <lable for="msg" class="font-lable"> Message</lable><br>
              <textarea id="msg"></textarea><br>
              <br>
 
-             <input type="submit" value="submit">
+        </div>    
+            
+
+             <input type="submit" value="Submit">
              <input type="reset" value="Reset">
 
              </form>
