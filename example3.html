@@ -1,60 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="example3.css">
-        <style>
-           
-        </style>
-
-        
-    </head>
-
-    <body>
-
-        <div class="background">
-
-        <h1>
-            Contact us
-        </h1>
-
+<head>
+    <link rel="stylesheet" href="example3.css">
+</head>
+<body>
+    <div class="background">
+        <h1>Contact us </h1>
         <form action="">
             <lable class="font-lable">Name <span class="font-star">* </span></lable> 
-
-        <div class="clear">
-            <div class="box-name">
-                 <input type="text" id="fnam" name="firstname" required>
-                 <lable for="fnam">First</lable> 
-            </div>
-
-            <div class="box-last">
-                <input type="text" id="lnam" name="lastname" required><br>
-                <lable for="lnam">Last</lable>
-            </div>
-
-        </div> 
-        <br>
-        <div class="box-email">
-            <lable for="mail" class="font-lable">Email <span class="font-star"> *</span> </lable><br>
-            <input id="mail" type="email" name="email" required><br><br>
-        </div>
+            <div class="container">
+                <div class="box-name">
+                    <input type="text" id="fnam" name="firstname" required>
+                    <lable for="fnam">First</lable> 
+                </div> 
+                <div class="box-last">
+                    <input type="text" id="lnam" name="lastname" required><br>
+                    <lable for="lnam">Last</lable>
+                </div>               
+            </div> 
+            <br>
+            <div class="box-email">
+                <lable for="mail" class="font-lable">Email <span class="font-star"> *</span> </lable><br>
+                <input id="mail" type="email" name="email" required><br><br>
+            </div>      
+            <div class="message">
+                <lable for="msg" class="font-lable"> Message</lable><br>
+                <textarea id="msg"></textarea><br>
+                <br>
+            </div>  
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+</html>
+    
+    
             
-        <div class="message">
-            <lable for="msg" class="font-lable"> Message</lable><br>
-             <textarea id="msg"></textarea><br>
-             <br>
-
-        </div>    
+    
+              
+    
             
-
-             <input type="submit" value="Submit">
-             <input type="reset" value="Reset">
-
-             </form>
-            </div>
-
-
-          
+     
 
         
-    </body>
-</html>
+
+        

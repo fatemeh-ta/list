@@ -1,41 +1,43 @@
-*{
+*,::before, ::after{
    box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing:border-box ;
 }
 
-.font-star{
-    color:red;
+/*font style*/
+.font-star {
+   color:red;
 }
 
-textarea{
-    width:100%;
-    padding:5px;
-    height:200px;
-    resize: both;
-    overflow: auto;
-    
+body {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-body{
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-lable{
+lable {
    font-weight: bold;
 }
 
-.font-lable{
+.font-lable {
    font-size:large;
 }
 
-.background{
+/*input style*/
+input {
+   border-radius: 0%;
+   padding:5px;
+   border:1px solid rgba(189, 184, 184, 0.973);
+}
+
+/*form background style*/
+.background {
    width:100%;
    height:auto;
    padding:20px 20px;
    background-color: rgba(218, 213, 213, 0.973);
-  
 }
 
-input[type="reset"]{
+/*input Reset*/
+input[type="reset"] {
    margin-left: 20px;
    font-weight: bold;
    background-color: rgba(218, 213, 213, 0.973) ;
@@ -45,7 +47,8 @@ input[type="reset"]{
    font-family: cursive;
 }
 
-input[type="submit"]{
+/*input Submit*/
+input[type="submit"] {
    font-weight: bold;
    background-color: rgba(218, 213, 213, 0.973) ;
    color:black;
@@ -54,89 +57,141 @@ input[type="submit"]{
    font-family: cursive;
 }
 
-
-input[type="email"]{
-   width:100%;
-
-}
-
-.box-name{
-   width:50%;
-   float:left;
-}
-
-.box-last{
-   width:50%;
-   float:left;
-   padding-left:5px;
-}
-
-input[id="fnam"]{
-   width:100%;
- }
-
-input[id="lnam"]{
+/*input email style*/
+input[type="email"] {
    width:100%;
 }
 
-.clear{
-   clear:both;
-   display:table;
-   content:"";
+.box-email {
+   width:100%;  
 }
 
-.box-email{
+/*input first name style*/
+input[id="fnam"] {
    width:100%;
-   
+   margin-top:1%;
+   margin-bottom: 1%;
 }
 
-.message{
+/*input last name style*/
+input[id="lnam"] {
    width:100%;
-  }
+   margin-top:1%;
+   margin-bottom: 1%;
+}
 
-input{
-   border-radius: 0%;
+/*message box*/
+.message {
+   width:100%;
+}
+
+textarea {
+   width:100%;
    padding:5px;
-   border:1px solid rgba(189, 184, 184, 0.973);
+   height:200px;
+   resize: both;
+   overflow: auto;    
 }
 
-@media only screen and (min-width:590px){
+@media only screen and (min-width:590px) {
 
-   .background{
-      width:75%;}
+   /*container*/
+   .container::after {
+      clear:both;
+      display:table;
+      content:"";
+   }
 
-   .box-name{
+   .background {
+      width:75%;
+   }
+
+   /*input first name style*/
+   .box-name {
       width:50%;
       float:left;
    }
    
-   .box-last{
+   /*input Last name style*/
+   .box-last {
       width:50%;
       float:left;
       padding-left:10px
    }
 
-@media only screen and (min-width:790px){
+   
+@media only screen and (min-width:790px) {
 
-      .background{
-         width:50%;}   
-   
-   
+   .background {
+      width:50%;
+   }
+
+   .container::after {
+      clear:both;
+      display:table;
+      content:"";
+   }
+
+   .box-name {
+      width:50%;
+      float:left;
+   }
+
+   .box-last {
+      width:50%;
+      float:left;
+      padding-left:10px
+   }
+          
 }
 
-@media only screen and (min-width:1170px){
+@media only screen and (min-width:1170px) {
 
-   .background{
-      width:30%;}   
+   .background { 
+      width:30%;
+   }
 
+   .container::after {
+      clear:both;
+      display:table;
+      content:"";
+   }
+     
+   .box-name {
+      width:50%;
+      float:left;
+   }
 
+   .box-last {
+      width:50%;
+      float:left;
+      padding-left:10px
+   }
+      
 }
 
-@media only screen and (min-width:1900px){
+@media only screen and (min-width:1900px) {
 
-   .background{
-      width:20%;}   
+   .background {
+      width:20%;
+   } 
 
+   .container::after {
+      clear:both;
+      display:table;
+      content:"";
+   }
+
+   .box-name {
+      width:50%;
+      float:left;
+   }
+
+   .box-last {
+      width:50%;
+      float:left;
+      padding-left:10px
+   }
 
 }
 
